@@ -200,3 +200,43 @@ blockquote p {
     }
 }
 /*-----------------------------------*/
+
+/*------------  Call to Action Section -------------*/
+.call_to_action {
+    margin: 10rem auto;
+    width: calc(100% - 50rem);
+    background-color: #3882F6;
+    padding: 5rem 10rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.call_to_action > h3{
+    font-size: 1.5rem;
+    color: #F9FAF8;
+    grid-row: 1/2;
+}
+
+.call_to_action > p {
+    color: #F9FAF8;
+    font-size: 1.3rem;
+    grid-row: 2/3;
+}
+
+.call_to_action > button {
+    grid-row: 1/-1;
+    border: 3px solid #F9FAF8;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+@media all and (max-width: 500px){
+    .call_to_action{
+        padding: 2rem;
+    }
+}
