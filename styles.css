@@ -4,8 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #1F2937;
-    color: #fff;
 }
 
 html{
@@ -21,6 +19,9 @@ a {
 }
 
 /*------------  Navbar  -------------*/
+header {
+    background-color: #1F2937;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -35,27 +36,29 @@ a {
 
 .navs {
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     gap: 2rem;
 }
 
 .navs > li > a {
-    color: #F9FAF8;
+    color: #E5E7EB;
 }
 
 @media all and (max-width: 500px){
     .navbar {
         flex-direction: column;
+        padding: 2rem 3rem;
+        align-items: center;
     }
 }
 /*-----------------------------------*/
 
 /*------------  Hero Section -------------*/
 .hero {
-    padding: 0rem 25rem;
+    padding: 8rem 25rem;
     display: flex;
-    padding-top: 15rem;
     justify-content:center;
+    background-color: #1F2937;
 }
 .hero > .column {
     flex: 50%;
@@ -95,6 +98,61 @@ a {
         padding: 0;
         flex-direction: column;
         align-items: center;
+    }
+}
+/*-----------------------------------*/
+
+/*------------  Card Section -------------*/
+.card-section {
+    padding: 4rem 0;
+}
+.card-section > h2 {
+    color: #1F2937;
+    text-align: center;
+    font-size: 3.6rem;
+
+}
+
+.cards {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 35rem;
+    gap: 5rem;
+    height: 25rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.card > p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card > img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 500px){
+    .cards {
+        height: 100%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 0 1 38%;
     }
 }
 /*-----------------------------------*/
