@@ -1,0 +1,46 @@
+/* Basic Styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+li{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------------  Navbar  -------------*/
+header {
+    background-color: #1F2937;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 25rem;
+}
+
+.header-logo{
+    font-size: 2.4rem;
+    color: #F9FAF8;
+}
+
+.navs {
+    display: flex;
+    font-size: 1.6rem;
+    gap: 2rem;
+}
+
+.navs > li > a {
+    color: #F9FAF8;
+}
